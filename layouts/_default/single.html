@@ -1,0 +1,11 @@
+{{/* Examples:
+  - wrapper style1 fullscreen fade-up
+  - wrapper style2 spotlights
+  - wrapper style3 fade-up
+  - wrapper style1-alt
+*/}}
+<section id="main" class="wrapper {{ .Params.classes | default ""}}">
+  <div class="inner">
+  {{ .Content }}
+  </div>
+</section>

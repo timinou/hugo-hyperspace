@@ -1,0 +1,4 @@
+<section class="{{index .Params 1}}">
+    {{ with (index .Params 0) }}<span class="icon major fa-{{ . }}"></span>{{ end }}
+    {{ .Inner }}
+</section>

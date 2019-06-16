@@ -1,0 +1,12 @@
+<section id="sidebar">
+  <div class="inner">
+    <nav>
+      <ul>
+      <li><a href="#{{ .Params.section }}">{{ .Name }}</a></li>
+      {{ range .Pages }}
+        <li><a href="#{{ .Params.section }}" >{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+    </nav>
+  </div>
+</section>
